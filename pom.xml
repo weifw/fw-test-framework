@@ -109,6 +109,8 @@
 		<fw.api.version>${fw.version}</fw.api.version>
 	</properties>
 
+
+
 	<modules>
 		<!-- 基础公共模块 -->
 		<module>fw-cloud-core</module>
