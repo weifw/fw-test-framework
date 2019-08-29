@@ -4,16 +4,17 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: ENC(rC/X/8UBBH2bn9Tgfuu7aw==)
-    password: ENC(IVTzs5LDfVEsblAFWFgA9w==)
-    url: jdbc:mysql://localhost:3306/fw-cloud?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      username: ENC(YPUrmzh2nneysDto9/00Wg==)
+      password: ENC(/hM8Qddu/QiKz6FwM5y14Q==)
+    url: jdbc:mysql://94.191.33.164:33306/fw-cloud?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
 
 zipkin:
   collector:
     rabbitmq:
-      addresses: 127.0.0.1:5672
-      password: guest
-      username: guest
+      addresses: 94.191.33.164:5672
+      password: admin
+      username: admin
+      virtual-host: my_vhost
       queue: zipkin
   storage:
     type: mysql

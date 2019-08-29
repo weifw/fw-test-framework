@@ -115,3 +115,51 @@
 
 ![image](doc/pic/1008.png)
 ![image](doc/pic/1009.png)
+
+
+mysql 加密方式
+PS D:\repository\org\jasypt\jasypt\1.9.2> java -cp jasypt-1.9.2.jar org.jasypt.intf.cli.JasyptPBEStringEncryptionCLI inp
+ut="mysql" password=test algorithm=PBEWithMD5AndDES
+
+----ENVIRONMENT-----------------
+
+Runtime: Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.112-b15
+
+
+
+----ARGUMENTS-------------------
+
+algorithm: PBEWithMD5AndDES
+input: mysql
+password: test
+
+
+
+----OUTPUT----------------------
+
+q3UqkmHfA7AfLXemisuJ6g==
+
+
+PS D:\repository\org\jasypt\jasypt\1.9.2> java -cp jasypt-1.9.2.jar org.jasypt.intf.cli.JasyptPBEStringEncryptionCLI inp
+ut="root" password=test algorithm=PBEWithMD5AndDES
+
+----ENVIRONMENT-----------------
+
+Runtime: Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.112-b15
+
+
+
+----ARGUMENTS-------------------
+
+algorithm: PBEWithMD5AndDES
+input: root
+password: test
+
+
+
+----OUTPUT----------------------
+
+
+
+
+PS D:\repository\org\jasypt\jasypt\1.9.2>
